@@ -84,8 +84,8 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
     <nav className={`fixed top-0 left-0 right-0 z-50 px-4 pt-4 transition-transform duration-300 ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-white/95 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-lg">
+      <div className="max-w-5xl mx-auto">
+        <div className="bg-white/85 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-lg">
           <div className="px-6 py-3">
             <div className="flex items-center justify-between">
               {/* Logo */}
@@ -142,10 +142,18 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
 
                 <Link
                   to="/deposit"
-                  className="flex items-center space-x-2 bg-orange-600 hover:bg-orange-700 text-white px-3 py-2 rounded-xl transition-all duration-300 hover:scale-105 font-medium shadow-md text-sm"
+                  className="flex items-center space-x-2 bg-orange-600 hover:bg-orange-700 text-white px-3 py-2 rounded-xl transition-all duration-300 hover:scale-105 font-medium text-sm"
                 >
                   <Plus size={16} />
                   <span>Déposer</span>
+                </Link>
+
+                <Link
+                  to="/favorites"
+                  className="p-2 bg-gray-100 hover:bg-gray-200 text-gray-700 transition-all duration-300 rounded-xl hover:scale-105"
+                  aria-label="Favoris"
+                >
+                  <Heart size={18} />
                 </Link>
 
                 <Link
