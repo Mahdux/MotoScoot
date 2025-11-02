@@ -94,7 +94,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                   <span className="text-white font-bold text-xs">M</span>
                 </div>
                 <span className="text-lg font-bold text-gray-900 hover:text-orange-600 transition-colors duration-300">
-                  Motoscoot
+                  MotoScoot.tn
                 </span>
               </Link>
 
