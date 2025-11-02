@@ -26,8 +26,12 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 to-orange-700 text-white min-h-[75vh] lg:min-h-[80vh] flex items-center">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative text-white min-h-[75vh] lg:min-h-[80vh] flex items-center overflow-hidden" style={{
+        backgroundImage: 'url(/hero_section\ background.webp)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
+        <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6">
             Trouvez la moto d'occasion
