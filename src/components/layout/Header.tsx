@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="max-w-5xl mx-auto">
-        <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-lg">
+        <div className="bg-white/88 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg">
           <div className="px-6 py-3">
             <div className="flex items-center justify-between">
               {/* Logo */}
