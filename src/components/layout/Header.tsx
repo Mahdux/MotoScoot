@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="max-w-5xl mx-auto">
-        <div className="bg-white/85 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-lg">
+        <div className="bg-white/90 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg">
           <div className="px-6 py-3">
             <div className="flex items-center justify-between">
               {/* Logo */}
@@ -174,7 +174,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                   </button>
 
                   {isProfileDropdownOpen && (
-                    <div className="absolute right-0 mt-3 w-64 bg-white/98 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200 py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+                    <div className="absolute right-0 mt-3 w-64 bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200 py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
                       {menuItems.map((item, index) => {
                         const Icon = item.icon;
                         return (
