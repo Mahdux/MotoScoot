@@ -1,12 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { TrendingUp, Shield, Users } from 'lucide-react';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { TrendingUp, Shield, Users, Search } from 'lucide-react';
 import MarketplaceCards from '../components/MarketplaceCards';
 import ListingCard from '../components/features/ListingCard';
 import { mockListings } from '../data/mockData';
 
 const Home: React.FC = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
   const featuredListings = mockListings.slice(0, 4);
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
+    }
+  };
 
   const stats = [
     { icon: <Users className="text-orange-600" size={24} />, value: '50,000+', label: 'Utilisateurs actifs' },
@@ -25,9 +34,27 @@ const Home: React.FC = () => {
             <br />
             <span className="text-orange-200">qui vous correspond</span>
           </h1>
-          <p className="text-xl lg:text-2xl mb-8 text-orange-100 max-w-3xl mx-auto">
-            Achetez et vendez des motos d'occasion, scooters et accessoires en toute sécurité
-          </p>
+
+          {/* Search Bar */}
+          <div className="max-w-3xl mx-auto mb-8">
+            <form onSubmit={handleSearch} className="relative">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Rechercher une moto, un scooter, une marque..."
+                className="w-full pl-6 pr-14 py-4 bg-white text-gray-900 placeholder-gray-500 rounded-xl text-lg focus:ring-4 focus:ring-orange-300 focus:outline-none shadow-lg"
+              />
+              <button
+                type="submit"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 p-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors"
+                aria-label="Rechercher"
+              >
+                <Search size={24} />
+              </button>
+            </form>
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/search"
