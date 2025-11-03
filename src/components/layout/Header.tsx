@@ -222,7 +222,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Rechercher une moto, un scooter, un accessoire..."
+                    placeholder="Rechercher..."
                     className="w-full pl-4 pr-12 py-3 bg-gray-50 border border-gray-300 rounded-xl text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 transition-all duration-300"
                     aria-label="Rechercher"
                     autoFocus
