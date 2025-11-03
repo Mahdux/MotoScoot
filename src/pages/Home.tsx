@@ -26,7 +26,7 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative text-white min-h-[75vh] lg:min-h-[80vh] flex items-center overflow-hidden">
+      <section className="relative text-white min-h-[70vh] lg:min-h-[75vh] flex items-center overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat grayscale"
