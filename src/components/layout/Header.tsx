@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 px-4 pt-5 transition-transform duration-300 ${
+    <nav className={`fixed top-0 left-0 right-0 z-50 px-4 pt-6 transition-transform duration-300 ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="max-w-5xl mx-auto">
