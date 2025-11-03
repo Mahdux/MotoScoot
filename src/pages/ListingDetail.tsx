@@ -58,7 +58,7 @@ const ListingDetail = () => {
       price: 9200,
       brand: 'Honda',
       location: 'Marseille',
-      images: ['https://images.unsplash.com/photo-1558980664-769d59546b3d?w=400'],
+      images: ['https://images.unsplash.com/photo-1558980664-769d59546b3d?w=400'],s
       isFavorite: true
     },
     {
