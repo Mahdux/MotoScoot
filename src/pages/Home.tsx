@@ -26,10 +26,30 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 to-orange-700 text-white min-h-[75vh] lg:min-h-[80vh] flex items-center">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+      <section className="relative text-white min-h-[67vh] lg:min-h-[73vh] flex items-center overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat grayscale"
+          style={{
+            backgroundImage: 'url(/hero-background.webp)',
+          }}
+        />
+
+        {/* Orange Overlay with Blend Mode */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundColor: '#E65100',
+            opacity: 0.95,
+            mixBlendMode: 'multiply',
+          }}
+        />
+
+        {/* Additional subtle overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-transparent" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
             Trouvez la moto d'occasion
             <br />
             <span className="text-orange-200">qui vous correspond</span>
@@ -42,7 +62,7 @@ const Home: React.FC = () => {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Rechercher une moto, un scooter, une marque..."
+                placeholder="Recherche..."
                 className="w-full pl-6 pr-14 py-4 bg-white text-gray-900 placeholder-gray-500 rounded-xl text-lg focus:ring-4 focus:ring-orange-300 focus:outline-none shadow-lg"
               />
               <button

@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 px-4 pt-4 transition-transform duration-300 ${
+    <nav className={`fixed top-0 left-0 right-0 z-50 px-4 pt-8 transition-transform duration-300 ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="max-w-5xl mx-auto">
@@ -94,7 +94,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                   <span className="text-white font-bold text-xs">M</span>
                 </div>
                 <span className="text-lg font-bold text-gray-900 hover:text-orange-600 transition-colors duration-300">
-                  MotoMarket
+                  MotoScoot.tn
                 </span>
               </Link>
 
@@ -222,7 +222,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Rechercher une moto, un scooter, un accessoire..."
+                    placeholder="Rechercher..."
                     className="w-full pl-4 pr-12 py-3 bg-gray-50 border border-gray-300 rounded-xl text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 transition-all duration-300"
                     aria-label="Rechercher"
                     autoFocus

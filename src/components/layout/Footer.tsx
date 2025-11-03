@@ -173,7 +173,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-sm text-gray-500 text-center sm:text-left">
-              © {currentYear} MotoMarket. Tous droits réservés.
+              © {currentYear} MotoScoot.tn Tous droits réservés.
             </p>
             <p className="text-sm text-gray-500 flex items-center">
               Créé avec{' '}
