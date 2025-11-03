@@ -49,7 +49,7 @@ const Home: React.FC = () => {
 <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-transparent" />
 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
   <h1 className="text-4xl lg:text-6xl font-bold mb-4 drop-shadow-lg">
-    Trouvez la moto <br> qui vous correspond
+    Trouvez la moto <br> qui vous correspond</br>
   </h1>
   <p className="text-xl lg:text-2xl text-orange-200 drop-shadow-md">
     Parcourez les meilleures offres de motos d'occasion partout en Tunisie
