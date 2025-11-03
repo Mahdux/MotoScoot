@@ -46,14 +46,15 @@ const Home: React.FC = () => {
         />
 
         {/* Additional subtle overlay for depth */}
-<div className="absolute inset-0 bg-gradient-to-br from-black/10 to-transparent" />
-<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-  <h1 className="text-4xl lg:text-6xl font-bold mb-4 drop-shadow-lg">
-    Trouvez la moto qui vous correspond
-  </h1>
-  <p className="text-xl lg:text-2xl text-orange-200 drop-shadow-md">
-    Parcourez les meilleures offres de motos d'occasion partout en Tunisie
-  </p>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-transparent" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
+            Trouvez la moto d'occasions
+            <br />
+            <span className="text-orange-200">qui vous correspond</span>
+          </h1>
+
           {/* Search Bar */}
           <div className="max-w-3xl mx-auto mb-8">
             <form onSubmit={handleSearch} className="relative">
