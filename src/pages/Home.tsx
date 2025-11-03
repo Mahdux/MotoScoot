@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           className="absolute inset-0"
           style={{
             backgroundColor: '#E65100',
-            opacity: 0.80,
+            opacity: 0.90,
             mixBlendMode: 'multiply',
           }}
         />
