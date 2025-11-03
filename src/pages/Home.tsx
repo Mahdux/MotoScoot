@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           className="absolute inset-0"
           style={{
             backgroundColor: '#E65100',
-            opacity: 0.95,
+            opacity: 0.75,
             mixBlendMode: 'multiply',
           }}
         />
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-transparent" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
             Trouvez la moto d'occasion
             <br />
             <span className="text-orange-200">qui vous correspond</span>
