@@ -50,7 +50,7 @@ const Home: React.FC = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
-            Trouvez la moto d'occasions
+            Trouvez la moto d'occasion
             <br />
             <span className="text-orange-200">qui vous correspond</span>
           </h1>
