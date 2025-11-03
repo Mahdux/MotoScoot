@@ -26,9 +26,29 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-orange-600 to-orange-700 text-white min-h-[75vh] lg:min-h-[80vh] flex items-center">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative text-white min-h-[75vh] lg:min-h-[80vh] flex items-center overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat grayscale"
+          style={{
+            backgroundImage: 'url(/hero-background.webp)',
+          }}
+        />
+
+        {/* Orange Overlay with Blend Mode */}
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundColor: '#E65100',
+            opacity: 0.75,
+            mixBlendMode: 'multiply',
+          }}
+        />
+
+        {/* Additional subtle overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/10 to-transparent" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1 className="text-4xl lg:text-6xl font-bold mb-6">
             Trouvez la moto d'occasion
             <br />
