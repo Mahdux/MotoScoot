@@ -41,7 +41,7 @@ const Home: React.FC = () => {
           style={{
             backgroundColor: '#E65100',
             opacity: 0.80,
-            mixBlendMode: 'darken',
+            mixBlendMode: 'color-dodge',
           }}
         />
 
