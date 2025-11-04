@@ -71,7 +71,13 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-     
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+          <div className="space-y-6">
+            <Link to="/" className="flex items-center space-x-2 group">
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center transition-transform group-hover:scale-105">
+                <span className="text-white font-bold text-lg">M</span>
+              </div>
               <span className="text-xl font-bold text-white">MotoMarket</span>
             </Link>
 
